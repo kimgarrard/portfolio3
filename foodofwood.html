@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <nav class="navcases">
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+  <a href="enjoin.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+  <a href="tofgrof.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+    <main id="foodofwood">
+
+      <div class="firstfotodiv">
+      </div>
+
+      <div class="maindetail">
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Food of Wood</h2>
+          <div class="projectinfo">
+
+            <div class="">
+              <p>Jaar</p>
+              <p>2021</p>
+            </div>
+
+            <div class="">
+              <p>Rol</p>
+              <p>Design</p>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="">
+          <p>Voor stichting <a href="https://foodofwood.nl/" target="_blank">Food of Wood</a> heb ik een logo en een visitekaartje
+          ontworpen, ook ga ik nog een nieuwe website maken. Food of Wood is een stichting opgericht voor voedselbossen in Nederland.</p>
+        </article>
+
+      </div>
+
+
+      <div class="uitnodiging">
+
+        <article class="">
+          <h2>Verschillende opties</h2>
+          <p>In het logo was het belangrijk dat 'voedselbos' terug te vinden was, dat heb ik gedaan door een boom terug te laten komen.
+          Ik ben begonnen met deze 3 verschillende opties en stijlen. Het eerste logo is een beetje sprookjesachtig, met de letters 'F' en 'W' in de stammen verwerkt.
+          Het tweede logo is wat versimpeld en buigt mooi over de letters heen. Het derde logo is meer abstract. Uiteindelijk is de middelste gekozen en ben ik hier verder op gaan itereren.</p>
+        </article>
+
+        <section class="imgrow imgrowschoenen">
+          <div class="imgdiv">
+            <img src="images/foodofwood1.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/foodofwood2.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/foodofwood3.png" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="">
+
+      <div class="imgandtext imgandtextfullscreen imgandtexfoodofwood">
+
+        <div class="imgdiv">
+          <img src="images/foodofwood_eindresultaat.png" alt="">
+        </div>
+
+        <article class="">
+          <h2>Logo & Visitekaartje</h2>
+          <p>Bij het uiteindelijke logo zit de slogan 'get used to foodwood' erbij en heb ik ronde rode vormen in de boom erbij gedaan,
+          om het voedsel te representeren. Verder heb ik een visitekaartje erbij ontworpen.</p>
+        </article>
+
+
+      </div>
+
+      <!-- <article class="">
+        <h2>Eindresultaat</h2>
+        <p>Bij het uiteindelijke logo zit de slogan 'get used to foodwood' erbij en heb ik ronde rode vormen in de boom erbij gedaan,
+        om het voedsel te representeren. Verder heb ik een visitekaartje erbij ontworpen.</p>
+      </article>
+
+      </div>
+
+        <div class="imgdiv imgdivfoodofwood">
+          <img src="images/foodofwood_eindresultaat.png" alt="">
+        </div> -->
+
+
+
+      </div>
+
+
+
+    </main>
+
+
+    <!-- <script src="js/portfolio.js"></script> -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    // https://stackoverflow.com/questions/34831602/increase-element-opacity-when-user-scrolls-down-the-page
+    $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+        $('.firstfotodiv').css({
+          opacity: function() {
+              var elementHeight = $(this).height(),
+              opacity = ((elementHeight - scrollTop) / elementHeight);
+              return opacity;
+          }
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>

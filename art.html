@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <nav class="navcases">
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+
+    <a href="etnischprofileren.html" class="buttoncases">
+      <p>&#10140;</p>
+    </a>
+
+    <a href="enjoin.html" class="buttoncases">
+      <p>&#10140;</p>
+    </a>
+
+    <main id="art">
+
+      <div class="firstfotodiv">
+      </div>
+
+      <div class="maindetail">
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Art</h2>
+          <div class="projectinfo">
+
+        </article>
+
+        <article class="">
+          <p>Al van kinds af aan ben ik gek op tekenen en dit is nog steeds mijn hobby. Naast tekenen op papier ben ik
+            ook digitaal gaan tekenen met mijn wacom tablet. </p>
+        </article>
+
+      </div>
+
+
+      <div class="">
+
+        <section class="imgrow imgrowshow">
+          <div class="imgdiv">
+            <img src="images/art.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/art4.jpeg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/art2.jpeg" alt="">
+          </div>
+
+        </section>
+
+        <section class="imgrow imgrowshow">
+          <div class="imgdiv">
+            <img src="images/art5.jpeg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/art1.jpeg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/art3.jpeg" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Illustraties & Extra's</h2>
+          <div class="projectinfo">
+
+        </article>
+
+        <article class="">
+          <p>Ik oefen ook graag met design in mijn vrije tijd. Dat doe ik op verschillende manieren:
+            van shirts laten bedrukken met een eigen ontwerp tot mijn photoshop skills verbeteren met uitprobeersels.</p>
+        </article>
+
+      </div>
+
+
+      <div class="">
+
+        <section class="imgrow imgrowshow">
+          <div class="imgdiv">
+            <img src="images/illustratie1.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/illustratie2.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/illustratie3.png" alt="">
+          </div>
+
+        </section>
+
+        <section class="imgrow imgrowshow">
+          <div class="imgdiv">
+            <img src="images/illustratie4.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/illustratie5.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/illustratie6.png" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+
+      </div>
+
+    </main>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    // https://stackoverflow.com/questions/34831602/increase-element-opacity-when-user-scrolls-down-the-page
+    $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+        $('.firstfotodiv').css({
+          opacity: function() {
+              var elementHeight = $(this).height(),
+              opacity = ((elementHeight - scrollTop) / elementHeight);
+              return opacity;
+          }
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>

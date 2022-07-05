@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <nav class="navcases">
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+  <a href="art.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+  <a href="foodofwood.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+    <main id="enjoin">
+
+      <div class="firstfotodiv">
+      </div>
+
+      <div class="maindetail">
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Enjoin</h2>
+          <div class="projectinfo">
+
+            <div class="">
+              <p>Jaar</p>
+              <p>2019</p>
+            </div>
+
+            <div class="">
+              <p>Rol</p>
+              <p>Design</p>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="">
+          <p>Voor een verzonnen muziekapp met de naam Enjoin (enjoy, join) heb ik een splashscreen ontworpen. Het is een app waarmee je
+          mensen kan ontmoeten om samen mee naar concerten te gaan. Voor het ontwerp en de app stond het woord 'verbonden' centraal. </p>
+        </article>
+
+      </div>
+
+
+      <div class="">
+
+        <article class="">
+          <h2>Inspiratiebeelden</h2>
+          <p>Om te beginnen heb ik inspiratiebeelden verzameld, met een groepje hebben we alle beelden bij elkaar gelegd en hebben we
+          er uiteindelijk vier gekozen. Vanuit deze inspiratiebeelden en met het kernwoord 'verbonden' heb ik het scherm ontworpen.</p>
+        </article>
+
+        <section class="imgrow imgrowenjoin">
+          <div class="imgdiv">
+            <img src="images/enjoin_insp3.jpg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_insp2.jpg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_insp4.jpg" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_insp1.jpg" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+      <div class="imgandtext">
+
+        <article class="">
+          <h2>Variaties</h2>
+          <p>Ik heb ervoor gekozen om de eerste twee beelden met elkaar te combineren, deze beelden vond ik allebei verbonden heel mooi
+          weergeven. </p>
+          <p>Hier heb ik veel met kleur gespeeld en meerdere variaties gemaakt om te kijken wat ik het best vond werken. </p>
+        </article>
+
+        <section class="imgrow imgrowenjoin">
+          <div class="imgdiv">
+            <img src="images/enjoin_var1.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_var2.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_var4.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/enjoin_var3.png" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+
+      <div class="imgandtext">
+
+        <div class="imgdiv imgdivenjoin">
+          <img src="images/enjoin_eindresultaat.png" alt="">
+          <!-- <video src="images/dinner_website.mov" autoplay muted loop poster=""></video> -->
+        </div>
+
+        <article class="articleenjoin">
+          <h2>Eindresultaat</h2>
+          <p>Bij het eindresultaat ben ik uiteindelijk gegaan voor een donkerblauwe achtergrond met een witte illustratie.
+          Daarnaast heb ik de typografie aangepast en deze verbonden met de illustratie in dezelfde lijndikte, om meer eenheid
+          tussen deze twee elementen te creëren. </p>
+          <p>Ook heb ik met de brush tool in photoshop nog wat ruis toegevoegd, dit vind ik een mooie toevoeging aan het geheel.</p>
+        </article>
+
+      </div>
+
+
+      </div>
+
+    </main>
+
+
+    <!-- <script src="js/portfolio.js"></script> -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    // https://stackoverflow.com/questions/34831602/increase-element-opacity-when-user-scrolls-down-the-page
+    $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+        $('.firstfotodiv').css({
+          opacity: function() {
+              var elementHeight = $(this).height(),
+              opacity = ((elementHeight - scrollTop) / elementHeight);
+              return opacity;
+          }
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>

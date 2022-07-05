@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <img src="images/bg_7.webp" alt="">
+
+  <nav class="navcases">
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+  <a href="schoenen.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+  <a href="etnischprofileren.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+    <main id="rangers">
+
+      <div class="firstfotodiv">
+      </div>
+
+      <div class="maindetail">
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Polsbandje Rangers</h2>
+          <div class="projectinfo">
+
+            <div class="">
+              <p>Jaar</p>
+              <p>2020</p>
+            </div>
+
+            <div class="">
+              <p>Rol</p>
+              <p>Design</p>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="">
+          <p>Tijdens mijn stage bij <a href="https://www.wwf.nl/" target="_blank">WWF</a> heb ik polsbandjes ontworpen voor de Rangers, dit vond ik een geweldige opdracht. Er kwamen
+          drie verschillende polsbandjes met een panda, een zeeschildpad en een koala. </p>
+        </article>
+
+      </div>
+
+
+      <div class="imgandtext">
+
+        <div class="imgdiv">
+          <img src="images/rangers_v1.png" alt="">
+        </div>
+
+        <article class="">
+          <h2>Variaties</h2>
+          <p>Terwijl ik bezig was met het ontwerpen van de bandjes, kwam ik op een idee. Het leek me leuk om er naast een gaaf bandje ook een soort spel
+          van te maken, de dieren in het bandje zitten verstopt en zo kunnen de kinderen gaan tellen hoeveel ze zien.  </p>
+          <p>In het ontwerp heb ik verschillende stijlen geprobeerd en veel gevarieerd, uiteindelijk is er voor de middelste gekozen.  </p>
+        </article>
+
+
+      </div>
+
+      <div class="">
+
+      <article class="">
+        <h2>Eindresultaat</h2>
+        <p>Deze bandjes heb ik uiteindelijk ook uitgewerkt met de zeeschildpad en de koala. Bij deze bandjes had ik bedacht om de kleuren overal net wat
+          anders te maken, hierdoor is het wel een mooie eenheid maar is elk bandje toch ook weer uniek</p>
+      </article>
+
+      </div>
+
+        <div class="imgdiv imgdivrangers">
+          <img src="images/rangers.png" alt="">
+          <!-- <video src="images/dinner_website.mov" autoplay muted loop poster=""></video> -->
+        </div>
+
+
+      </div>
+
+    </main>
+
+
+    <!-- <script src="js/portfolio.js"></script> -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    // https://stackoverflow.com/questions/34831602/increase-element-opacity-when-user-scrolls-down-the-page
+    $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+        $('.firstfotodiv').css({
+          opacity: function() {
+              var elementHeight = $(this).height(),
+              opacity = ((elementHeight - scrollTop) / elementHeight);
+              return opacity;
+          }
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>

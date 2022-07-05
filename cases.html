@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <img src="images/bg_7.webp" alt="">
+
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html" class="selected"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" id="container">
+
+  <!-- <h1>
+    <span>K</span>
+    <span>I</span>
+    <span>M</span>
+    <span>G</span>
+    <span>A</span>
+    <span>R</span>
+    <span>R</span>
+    <span>A</span>
+    <span>R</span>
+    <span>D</span>
+  </h1> -->
+
+  <section class="fotos">
+
+    <div class="rij rij1">
+      <a class="hover1" href="etnischprofileren.html">
+        <div class="foto1"><img src="images/etnischprofileren.png" alt=""></img></div>
+        <div class="info1 hide"><p>Etnisch Profileren</p></div>
+      </a>
+
+      <a class="hover2" href="art.html">
+        <div class="foto2"><img src="images/artcases.png" alt=""></img></div>
+        <div class="info2 hide"><p>Art & Illustraties</p></div>
+      </a>
+
+      <a class="hover3" href="enjoin.html">
+        <div class="foto3"><img src="images/enjoincases.png" alt=""></img></div>
+        <div class="info3 hide"><p>Splashscreen Enjoin</p></div>
+      </a>
+    </div>
+
+    <div class="rij rij2">
+      <a class="hover1" href="tofgrof.html">
+        <div class="foto1"><img src="images/tofgrofcases.png" alt=""></img></div>
+        <div class="info1 hide"><p>Tofgrof</p></div>
+      </a>
+
+      <a class="hover2">
+        <div class="foto2"><img src="images/kleineumcases.png" alt=""></img></div>
+        <div class="info2 hide"><p>Coming soon!</p></div>
+      </a>
+
+      <a class="hover3" href="foodofwood.html">
+        <div class="foto3"><img src="images/foodofwoodcases.png" alt=""></img></div>
+        <div class="info3 hide"><p>Food of Wood</p></div>
+      </a>
+    </div>
+
+    <div class="rij rij3">
+      <a class="hover1" href="dinner.html">
+        <div class="foto1"><img src="images/dinner.png" alt=""></img></div>
+        <div class="info1 hide"><p>CMOTalk Dinner</p></div>
+      </a>
+
+      <a class="hover2" href="schoenen.html">
+        <div class="foto2"><img src="images/schoenencases.png" alt=""></img></div>
+        <div class="info2 hide"><p>Schoenen Animatie</p></div>
+      </a>
+
+      <a class="hover3" href="rangers.html">
+        <div class="foto3"><img src="images/rangerscases.png" alt=""></img></div>
+        <div class="info3 hide"><p>WWF Rangers polsbandje</p></div>
+      </a>
+    </div>
+
+  </section>
+
+  </div>
+
+<script src="js/cases.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    // throttling is built in, just define ms
+    $.waypoints.settings.scrollThrottle = 30;
+
+    $('#content').waypoint(function(event, direction) {
+        $(this).toggleClass('sticky', direction === "down");
+        event.stopPropagation();
+    }, {
+        offset: 'bottom-in-view' // checkpoint at bottom of #content
+    });
+});
+
+</script>
+
+</html>

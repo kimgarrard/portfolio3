@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <nav class="navcases">
+    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    <ul>
+      <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+      <li><a href="overmij.html"><div class="opacity"></div>Over mij</a></li>
+    </ul>
+  </nav>
+
+  <a href="rangers.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+  <a href="art.html" class="buttoncases">
+    <p>&#10140;</p>
+  </a>
+
+    <main id="etnischprofileren">
+
+      <div class="firstfotodiv">
+      </div>
+
+      <div class="maindetail">
+
+      <div class="introdiv">
+
+        <article class="">
+          <h2>Etnisch profileren</h2>
+          <div class="projectinfo">
+
+            <div class="">
+              <p>Jaar</p>
+              <p>2020</p>
+            </div>
+
+            <div class="">
+              <p>Rol</p>
+              <p>Frontend / web design</p>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="">
+          <p>Voor een datavizualisatie project voor <a href="https://controlealtdelete.nl/" target="_blank">Controle Alt Delete</a>
+             ben ik met een team van drie mensen aan de slag gegaan. In een onafhankelijk onderzoek van Controle Alt Delete zijn 2000 mensen in de omgeving Amsterdam gevraagd hun ervaringen met betrekking tot de politie te delen door middel van een vragenlijst.
+            Met dit onderzoek is geprobeerd te achterhalen hoe groot het probleem van etnisch profileren binnen de politie is. Het was aan ons
+            om dit op een website op een overzichtelijke en visueel aantrekkelijke manier weer te geven.</p>
+            <a href="https://joanpadolina.github.io/Etnisch-profileren/public/index2.html" target="_blank" class="button">
+              <div class=""></div>
+              <p>Bekijk website</p>
+            </a>
+        </article>
+
+      </div>
+
+
+      <div class="uitnodiging">
+
+        <article class="">
+          <h2>Welke data?</h2>
+          <p>De eerste stap voor ons was om de data te bekijken en te exploreren. Om een goed beeld te krijgen van de data hadden we met behulp
+          van Tableau een paar eerste grafieken gemaakt. Uiteindelijk hebben we voor onze grafieken onderscheid gemaakt in twee groepen: Nederlanders met een Nederlandse achtergrond
+          en Nederlanders met een niet-westerse migratieachtergrond.</p>
+
+          <p>Na veel onderzoek, exploreren en schetsen hebben we er uiteindelijk voor gekozen om drie grafieken te maken. In de eerste grafiek vergelijken we de verschillen tussen de groepen
+          met betrekking tot contact met de politie en het gevolg hiervan. In de tweede grafiek focussen we ons op de meningvragen, of mensen het terecht vonden dat ze door de politie werden
+          benaderd en of mensen het gevoel hadden dat ze benaderd werden vanwege hun culturele of religieuze achtergrond. De derde grafiek is heel interactief, hier kun je de twee groepen
+          met elkaar vergelijken door op een vraag te klikken. De antwoorden worden geprojecteerd op een schaal met cijfers in het algemene vertrouwen in de politie.</p>
+
+          <p>Bekijk het hele proces <a href="https://joanpadolina.gitbook.io/product-biografie-promptbitious/" target="_blank">hier</a></p>
+        </article>
+
+        <section class="imgrow imgrowetnisch">
+          <div class="imgdiv">
+            <img src="images/etnischprofileren_grafiek1.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/etnischprofileren_grafiek2.png" alt="">
+          </div>
+
+          <div class="imgdiv">
+            <img src="images/etnischprofileren_grafiek3.png" alt="">
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+      <div class="imgandtext imgandtextfullscreen">
+
+        <div class="imgdiv videodiv">
+          <video src="images/etnischprofileren_parallax.mov" autoplay muted loop poster=""></video>
+        </div>
+
+        <article class="">
+          <h2>Parallax</h2>
+          <p>Aan het begin van de website hebben we gebruik gemaakt van het parallax effect. Wanneer je scrollt krijg je een soort 3D effect. </p>
+          <p>Omdat het onderzoek in Amsterdam is afgelegd, zie je
+          de stad aan het begin. Bovenaan de site is het wit, maar als je naar beneden gaat wordt het donker. Je duikt als het ware in de data en
+          gaat de diepte in. </p>
+        </article>
+
+      </div>
+
+
+      <div class="">
+
+        <article class="">
+          <h2>De website</h2>
+          <p>Op de website kun je de data en grafieken bekijken. We lichten kort uit waar het onderzoek over gaat en ook kun je zien
+          wie er achter de data zit. De grafieken hebben we niet alleen voor desktop ontworpen, maar ook voor mobiel.</p>
+        </article>
+
+      </div>
+
+        <div class="imgdiv videodiv videodivetnischprofileren">
+          <video src="images/etnischprofileren_website.mov" autoplay muted loop poster=""></video>
+        </div>
+
+
+
+      </div>
+
+    </main>
+
+
+    <!-- <script src="js/portfolio.js"></script> -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    document.querySelector('video').playbackRate = 1.5;
+
+    // https://stackoverflow.com/questions/34831602/increase-element-opacity-when-user-scrolls-down-the-page
+
+    $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+        $('.firstfotodiv').css({
+          opacity: function() {
+              var elementHeight = $(this).height(),
+              opacity = ((elementHeight - scrollTop) / elementHeight);
+              return opacity;
+          }
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>
