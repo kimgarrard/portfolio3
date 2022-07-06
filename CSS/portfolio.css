@@ -844,6 +844,11 @@ a {
     display: none;
   }
 
+  body > img:nth-of-type(1) {
+    height: 100vh;
+    width: auto;
+  }
+
   p {
     font-size: 17px;
   }
@@ -930,6 +935,10 @@ a {
 
   nav {
     width: 100vw;
+  }
+
+  nav img {
+    margin-left: 0.25em;
   }
 
   /* MENU STYLES */
