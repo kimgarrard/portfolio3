@@ -210,6 +210,10 @@ a {
   z-index: 2;
 }
 
+.visiemissie {
+  height: 36vh;
+}
+
 .begin {
   width: 60vw;
   margin: 0 20vw;
@@ -801,6 +805,31 @@ a {
 
 .invisible {
   opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VISIE & MISSIE */
+
+.text2 {
+  margin-left: 10em;
 }
 
 

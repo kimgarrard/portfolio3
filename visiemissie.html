@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Kim Garrard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+</head>
+
+<body>
+
+  <img src="images/bg_7.webp" alt="">
+
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+
+      <ul>
+        <li><a href="cases.html"><div class="opacity"></div>Mijn werk</a></li>
+        <li><a href="#"><div class="opacity"></div>Visie en missie</a></li>
+        <li><a href="#"><div class="opacity"></div>Over mij</a></li>
+      </ul>
+
+      <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Mijn werk</a></li>
+                  <li><a href="#">Visie en missie</a></li>
+                  <li><a href="#">Over mij</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </nav>
+
+
+    <main>
+
+      <div id="realcontent" class="begin">
+
+        <img class="portfolio visiemissie" src="images/visie&missie_text.png" alt="">
+
+        <div class="text">
+          <p>Ik ben Kim, en ik design om bij te dragen aan een <span>duurzame</span> en <span>liefdevolle</span> wereld vol creativiteit.</p>
+          <p>Dit doe ik met een <span>visie</span>, een <span>missie</span> en <span>passie</span>.</p>
+          <!-- <a href="overmij.html" class="imgtestdiv button">Bekijk mijn werk</a> -->
+        </div>
+
+        <div class="kim">
+          <img src="images/begin_bg2.png" alt="">
+          <img class="begintekst" src="images/begin_text.png" alt="">
+          <img src="images/begin_kim.png" alt="">
+        </div>
+
+        <div class="text text2">
+          <p>Ik ben Kim, en ik design om bij te dragen aan een wereld vol creativiteit.</p>
+          <!-- <a href="overmij.html" class="imgtestdiv button">Bekijk mijn werk</a> -->
+        </div>
+
+        </div>
+
+
+        <div id="fakecontent"></div>
+
+
+    </main>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/cases.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+
+    const mq = window.matchMedia( "(min-width: 79em)" );
+
+    if (mq.matches) {
+      $(window).on('scroll', function() {
+        console.log("hoi");
+        $("#realcontent").css("left", -$(window).scrollTop());
+      });
+
+    }
+
+    </script>
+</body>
+
+</html>
