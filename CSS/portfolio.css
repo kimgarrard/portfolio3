@@ -100,6 +100,10 @@ nav ul li {
   font-family: "Avenir", Helvetica;
   transition: 200ms ease;
   border-bottom: 2px solid rgba(255,255,255,0);
+  font-family: "SketchOpen";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
 }
 
 nav li div {
